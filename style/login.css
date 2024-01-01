@@ -1,0 +1,156 @@
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,.9),rgb(255, 163, 51,.5)),url(../images/Background.png); 
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    position:relative;
+    width:100%;
+    max-width:450px;
+    height:500px;
+    background: transparent;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 255, 255,.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+
+}
+
+.main-box{
+    padding: 50px;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: white;
+}
+
+.input-box{
+    position: relative;
+    height: 52px;
+    width: 100%;
+    border-bottom: 2px solid white;
+    margin: 32 0px;
+}
+
+.input-box label{
+    position: absolute;
+    top:50%;
+    left: 6px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color:white;
+    font-weight: 500;
+    font-size: 18px;
+    transition: all ease 0.40s;
+}
+ .input-box input{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    padding: 0 30 0 6px;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+.icon{
+    position: absolute;
+    right:9px;
+    font-size: 20px;
+    color: white;
+    line-height: 55px;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+top:-3px;
+}
+
+.check{
+    color:white;
+    font-size: 15px;
+    font-weight: 500;
+    margin: -10px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.check label input{
+    vertical-align: middle;
+    margin-right: 6px;
+    accent-color: black;;
+}
+
+.check a{
+    color:white;
+}
+.check a:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 30px;
+    font-size: 17px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.register{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 35px 0 10px;
+}
+
+.register a{
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    margin-left: 5px;
+}
+
+.register a:hover{
+    text-decoration: underline;
+} 
+
+@media only screen and (max-width:840px){
+    .main-box .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .top .box{
+        margin: 10px 10px;
+    }
+    .bottom{
+        margin-top: 0;
+    }
+}
